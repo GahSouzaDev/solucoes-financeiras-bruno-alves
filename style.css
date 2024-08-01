@@ -1,3 +1,4 @@
+
 @charset "UTF-8";/*Adequação para acentuação*/
 */*declaração de cores*/
 {
@@ -8,7 +9,7 @@
 }
 #fundo-pg1
 {
-    background-color: white
+    background-color: var(--cinza1);
 }
 #inicio-pg1
 {
@@ -22,7 +23,7 @@
 {
     color:white;
     display: grid;
-    place-items: center;    
+    place-items: center;   
     margin: 10px;  
 }
 #img-perfil
@@ -30,7 +31,17 @@
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    box-shadow: 10px 10px 35px var(--cinza4);     
+    box-shadow: 10px 10px 30px var(--cinza4);
+    transform: scale(1);
+    transition: transform 0.3s ;
+    transition: box-shadow 0.3s;
+}
+#img-perfil:hover
+{
+    transform: scale(1.1);
+    transition: transform 0.3s ;
+    box-shadow: 10px 10px 10px var(--cinza4);
+    transition: box-shadow 0.3s;
 }
 #meio
 {
