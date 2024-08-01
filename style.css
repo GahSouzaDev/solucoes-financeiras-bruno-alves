@@ -23,14 +23,14 @@
     color:white;
     display: grid;
     place-items: center;    
+    margin: 10px;  
 }
 #img-perfil
 {
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    box-shadow: 10px 10px 35px var(--cinza4);
-    margin: 10px;    
+    box-shadow: 10px 10px 35px var(--cinza4);     
 }
 #meio
 {
