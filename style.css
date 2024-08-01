@@ -7,6 +7,10 @@
     --cinza3:rgb(105, 105, 105); 
     --cinza4:rgb(66, 66, 66); 
 }
+#favicon
+{
+    border-radius: 50%;
+}
 #fundo-pg1
 {
     background-color: var(--cinza1);
