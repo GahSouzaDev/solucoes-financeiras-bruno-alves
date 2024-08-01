@@ -41,7 +41,6 @@
     transition: box-shadow 0.3s;
     position: relative; /* Adicionado para garantir que o box-shadow não afete o layout */
     z-index: 1; /* Adicionado para garantir que a imagem esteja acima de outros elementos */
-
 }
 #img-perfil:hover
 {
@@ -49,6 +48,11 @@
     transition: transform 0.3s ;
     box-shadow: 10px 10px 10px var(--cinza4);
     transition: box-shadow 0.3s;
+}
+#botao-perfil
+{
+    background-color: transparent;
+    border: 0;
 }
 #meio
 {
