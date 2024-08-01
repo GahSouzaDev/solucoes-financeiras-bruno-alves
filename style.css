@@ -40,7 +40,7 @@
     transition: transform 0.3s ;
     transition: box-shadow 0.3s;
     position: relative; /* Adicionado para garantir que o box-shadow não afete o layout */
-    z-index: 1; /* Adicionado para garantir que a imagem esteja acima de outros elementos */
+    z-index: 1; /* Adicionado para garantir que a imagem esteja acima de outros elementos */    
 }
 #img-perfil:hover
 {
