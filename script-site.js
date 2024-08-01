@@ -1,8 +1,8 @@
 window.onresize = function() {
-    if (window.innerWidth >= 500) {
-        window.location.href = 'pagina-principal.html';
-    } else {
+    if (window.innerWidth <= 720) {
         window.location.href = 'index.html';
+    } else {
+        window.location.href = 'pagina-principal.html';
     }
 };
 
