@@ -1,8 +1,14 @@
 @charset "UTF-8";/*Adequação para acentuação*/
-
+*/*declaração de cores*/
+{
+    --cinza1:rgb(190, 188, 188);
+    --cinza2:rgb(141, 141, 141); 
+    --cinza3:rgb(105, 105, 105); 
+    --cinza4:rgb(66, 66, 66); 
+}
 #fundo-pg1
 {
-    background-color: black
+    background-color: white
 }
 #inicio-pg1
 {
@@ -14,7 +20,17 @@
 }
 #inicio
 {
- color:white
+    color:white;
+    display: grid;
+    place-items: center;    
+}
+#img-perfil
+{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    box-shadow: 10px 10px 10px black;
+    margin: 10px;    
 }
 #meio
 {
