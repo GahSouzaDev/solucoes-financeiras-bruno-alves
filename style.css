@@ -207,15 +207,31 @@
 }
 #final-pg1
 {
-    margin-top: 30px; /* Margem no topo */
-    display: flex;
-    flex-direction: column; /* Itens em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    width: 100%; /* Ocupa toda a largura disponível */    
-    margin-left: -5px;
+    display: flex; /* Configura o contêiner como flexbox */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaça os itens igualmente entre a esquerda e a direita */
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Adiciona um pouco de padding ao redor */
+    padding-right: 10px;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */      
 }
-
+#criador-pg1
+{
+    background-color: #fff;
+    margin-top: 20px;/* Gera uma margem na parte superior box */     
+    box-shadow: 10px 10px 20px var(--cinza4);
+    border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.5s ;
+    transition: box-shadow 0.5s;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    width: 750px;
+}
 /*---CSS pagina para descktop---*/
 
 #fundo-pg2
@@ -359,15 +375,24 @@
 #botao-fixo 
 {
     position: fixed; /* Fixa o botão em relação à tela */
-    bottom: 100px; /* Margem de 300px do final da página */
+    bottom: 100px; /* Margem de 100px do final da página */
     right: 20px; /* Margem de 20px do lado direito da tela */
     z-index: 1000; /* Garante que o botão fique acima de outros elementos */
-    background-color: none;   
-    padding: 10px 10px; /* Padding interno do botão (opcional) */
-    border: none; /* Remove a borda do botão (opcional) */
-    border-radius: 5px; /* Arredonda os cantos do botão (opcional) */
-    cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão (opcional) */   
+    background-color: white;       
+    border: none; /* Remove a borda do botão */
+    border-radius: 50%; /* Arredonda os cantos para fazer o botão ficar redondo */
+    cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão */
+    width: 60px; /* Define a largura do botão */    
+    display: flex; /* Usa Flexbox para centralizar o conteúdo */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    justify-content: center; /* Alinha o conteúdo horizontalmente */
 }
+#whatsapp
+{
+    margin-left: 1px;
+}
+
+
 #sobre-desktop
 {    
     background-color: #fff;
@@ -493,7 +518,7 @@
     margin-top: 50px;
     font-size: 20px;
     padding: 10px;
-    width: 800px;
+    width: 750px;
 }
 #qr-code 
 {
