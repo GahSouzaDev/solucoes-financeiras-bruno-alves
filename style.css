@@ -44,7 +44,7 @@
     background-color: #fff;
     margin-top: 20px;/* deixa uma margem no top para não ficar grudado na foto de perfil*/
     box-shadow: 10px 10px 20px var(--cinza4);
-    border: 2px solid black; /* Define uma borda preta de 2px */
+    border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
     text-align: center;
     transform: scale(0.9);
@@ -212,7 +212,7 @@
     background-color: #fff;
     margin-top: 70px;/* Gera uma margem na parte superior box */     
     box-shadow: 10px 10px 20px var(--cinza4);
-    border: 2px solid black; /* Define uma borda preta de 2px */
+    border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
     text-align: center;
     transform: scale(1);
@@ -232,7 +232,7 @@
     background-color: #fff;
     margin-top: 10px;/* Gera uma margem na parte superior box */       
     box-shadow: 10px 10px 20px var(--cinza4);
-    border: 2px solid black; /* Define uma borda preta de 2px */
+    border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
     text-align: center;
     transform: scale(1);
