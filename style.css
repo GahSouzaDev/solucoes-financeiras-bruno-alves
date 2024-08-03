@@ -47,13 +47,13 @@
     border: 2px solid black; /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
     text-align: center;
-    transform: scale(1);
+    transform: scale(0.9);
     transition: transform 0.5s ;
     transition: box-shadow 0.5s;
 }
 #box-titulo-smartphone:hover /*animação da caixa do titulo*/
 {
-    transform: scale(1.1);
+    transform: scale(1.01);
     transition: transform 0.5s ;
     box-shadow: 10px 10px 7px var(--cinza4);
     transition: box-shadow 0.5s;
@@ -62,16 +62,23 @@
 /*ajuste das imagens na pagina para smartphone*/
 #img-smartphone
 {
-    margin: 0;
+    margin: auto;
     margin-top: 0px;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;      
     gap: 50px; 
     flex-wrap: wrap; 
+    transform: scale(0.9);
+    transition: transform 0.5s ;
+}
+#img-smartphone :hover
+{
+    transform: scale(1.01);
+    transition: transform 0.5s ;
 }
 
 /*ajuste da parte inicial*/
@@ -111,10 +118,15 @@
     background-color: transparent;
     border: 0;
 }
-#meio-1
+#meio-1 
 {
-    margin-top: 30px;/* Margem para fazer com que a primeira imagem não fique colada na informação que esta acima*/
+    margin-top: 30px; /* Margem para afastar o conteúdo do topo */
+    display: flex; /* Ativa o flexbox no contêiner */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-direction: column; /* Opcional: para garantir que os itens fiquem em coluna */
 }
+
 #botao-img-smartphone
 {
     background-color: transparent;
