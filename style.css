@@ -27,6 +27,7 @@
 #meio-pg1
 {
     margin-top: 20px;/* Margem para fazer com que a imagens não fique colada na margem do topo do nagenador*/
+    justify-items: center;
 }
 
 /*----------TITULO-SMARTPHONE----------*/
@@ -65,7 +66,7 @@
 {
     width: 330px;
     background-color: #fff;
-    margin-top: 20px;/* deixa uma margem no top para não ficar grudado na foto de perfil*/
+    margin-top: 20px;/* deixa uma margem no top para não ficar grudado na titulo*/
     box-shadow: 10px 10px 20px var(--cinza4);
     border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
@@ -105,6 +106,7 @@
     flex-direction: column; /* Organiza os itens em uma coluna */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
+    justify-items: center;
     width: 100%; /* Ocupa toda a largura disponível */    
 }
 
@@ -196,6 +198,7 @@
     display: flex; /* Configura o contêiner principal como flexbox */
     align-items: flex-start; /* Alinha os itens no topo do contêiner */
     justify-content: center; /* Centraliza os itens horizontalmente */
+    justify-items: center;
     gap: 30px; /* Espaçamento entre o box e a imagem, se necessário */
     padding: 20px; /* Adiciona algum espaçamento interno ao contêiner principal */
 }
