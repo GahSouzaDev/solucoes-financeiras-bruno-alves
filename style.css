@@ -36,6 +36,7 @@
     font-family: Roboto;/* Escolhe a fonte vinda do google*/    
     padding: 1px 50px;/* Deixa espaço de 1px na parte superior e inferior e de 50px nas laterais, para ter espaço em branco nas laterais da box*/
     color: black;/*cor do texto*/
+    font-size: 20px;
 }
 
 /*ajuste da caixa do titulo*/
@@ -47,7 +48,7 @@
     border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
     text-align: center;
-    transform: scale(0.9);
+    transform: scale(0.88);
     transition: transform 0.5s ;
     transition: box-shadow 0.5s;
 }
@@ -60,7 +61,8 @@
 }
 
 /*ajuste das imagens na pagina para smartphone*/
-#meio-1 {
+#meio-1 
+{
     margin-top: 30px; /* Margem para afastar o conteúdo do topo */
     display: flex;
     flex-direction: column; /* Organiza os itens em uma coluna */
@@ -69,21 +71,24 @@
     width: 100%; /* Ocupa toda a largura disponível */    
 }
 
-#img-smartphone {
+#img-smartphone 
+{
     display: flex; /* Ativa o flexbox para o contêiner de imagens */
     flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte se necessário */
     justify-content: center; /* Centraliza as imagens horizontalmente */
     gap: 20px; /* Espaço entre as imagens */
 }
 
-#img-smartphone button {
+#img-smartphone button 
+{
     border: none; /* Remove a borda do botão */
     background: none; /* Remove o fundo do botão */
     padding: 0; /* Remove o padding do botão */
 }
 
-#img-smartphone img {
-    width: 400px; /* Define a largura fixa das imagens */
+#img-smartphone img 
+{
+    max-width: 400px; /* Define a largura fixa das imagens */
     height: auto; /* Mantém a proporção da imagem */
     display: block; /* Garante que a imagem seja um bloco */
 }
