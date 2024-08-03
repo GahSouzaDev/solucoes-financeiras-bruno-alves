@@ -1,3 +1,4 @@
+  
 window.onresize = function() {
     if (window.innerWidth <= 720) {
         window.location.href = 'index.html';
