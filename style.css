@@ -62,18 +62,9 @@
 /*ajuste das imagens na pagina para smartphone*/
 #img-smartphone
 {
-    margin: auto;
-    margin-top: 0px;
-    padding: 0;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;      
-    gap: 50px; 
-    flex-wrap: wrap; 
-    transform: scale(0.9);
-    transition: transform 0.5s ;
+    max-width: 100%; /* Garante que as imagens não excedam a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 10px; /* Adiciona espaço ao redor de cada imagem */   
 }
 #img-smartphone :hover
 {
@@ -122,10 +113,10 @@
 {
     margin-top: 30px; /* Margem para afastar o conteúdo do topo */
     display: flex; /* Ativa o flexbox no contêiner */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
-    flex-direction: column; /* Opcional: para garantir que os itens fiquem em coluna */
-}
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+}   
 
 #botao-img-smartphone
 {
