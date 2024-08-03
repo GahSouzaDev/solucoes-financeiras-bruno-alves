@@ -368,7 +368,25 @@
     border-radius: 5px; /* Arredonda os cantos do botão (opcional) */
     cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão (opcional) */   
 }
-
+#sobre-desktop
+{    
+    background-color: #fff;
+    margin-top: 20px;/* Gera uma margem na parte superior box */     
+    box-shadow: 10px 10px 20px var(--cinza4);
+    border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.5s ;
+    transition: box-shadow 0.5s;
+}
+#box-titulo-desktop:hover /*animação da caixa do titulo*/
+{
+    transform: scale(1.1);
+    transition: transform 0.5s ;
+    box-shadow: 10px 10px 10px var(--cinza4);
+    transition: box-shadow 0.5s;
+}
 
 
 /*Animação das imagens na pagina principal(desktop)*/
