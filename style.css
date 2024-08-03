@@ -135,16 +135,16 @@
 /* Ajusta testo de apresentação*/
 #texto-apresentacao
 {
-    font-family: Roboto;/* Escolhe a fonte vinda do google */    
+    font-family: Roboto;/* Escolhe a fonte vinda do google */        
     font-size: 15px;
     padding: 1px 20px;/* Deixa espaço de 1px na parte superior e inferior e de 50px nas laterais, para ter espaço em branco nas laterais da bo x*/
     color: black;/* Cor do texto */
 }
 #texto-apresentacao .icon 
 {
-    font-size: 24px; /* Ajusta o tamanho dos ícones */
+    font-size: 20px; /* Tamanho dos ícones */
     margin-right: 10px; /* Espaço entre o ícone e o texto */
-    vertical-align: middle; /* Alinha os ícones verticalmente com o texto */
+    vertical-align: middle; /* Alinha verticalmente os ícones com o texto */
 }
 
 /* ajuste da caixa do titulo */
