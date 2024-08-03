@@ -22,3 +22,8 @@ REDES SOCIAIS CLIENTE:
 WhatsApp: https://wa.me/message/OIQDSPEFPUIFN1
 Instagran: https://www.instagram.com/bruno.alves.marques?igsh=b2l3c28wY2g3bWJ3
 Facebook: https://www.facebook.com/profile.php?id=61554782643114&mibextid=kFxxJD
+
+Fonte usada: Roboto
+Estilo: Sans-serif
+Descrição: Uma fonte moderna, limpa e altamente legível. É versátil e funciona bem tanto para texto de corpo quanto para cabeçalhos.
+Link: Roboto no Google Fonts

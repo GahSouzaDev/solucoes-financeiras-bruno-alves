@@ -1,5 +1,6 @@
 
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');/*link da font do google*/
 
 /*declaração de cores*/
 *
@@ -15,7 +16,7 @@
 /*cor de fundo da pagina smartphone*/
 #fundo-pg1
 {
-    background-color: var(--cinza1);
+    background-color: var(--cinza1);/*fundo da pagina smartphone*/
 }
 
 #inicio-pg1
@@ -24,6 +25,31 @@
 }
 
 #meio-pg1
+{
+    margin-top: 20px;/*margem para fazer com que a imagens não fique colada na margem do topo do nagenador*/
+}
+
+/*----------TITULO-SMARTPHONE----------*/
+/*ajustes do titulo*/
+#titulo-smartphone
+{
+    font-family: Roboto;/*Escolhe a fonte vinda do google*/    
+    padding: 1px 50px;/*Deixa espaço de 1px na parte superior e inferior e de 50px nas laterais, para ter espaço em branco nas laterais da box*/
+    color: black;/*cor do texto*/
+}
+
+/*ajuste da caixa do titulo*/
+#box-titulo-smartphone 
+{
+    margin-top: 20px;/*deixa uma margem no top para não ficar grudado na foto de perfil*/
+    box-shadow: 10px 10px 10px black;
+    border: 2px solid black; /* Define uma borda preta de 2px */
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    text-align: center;
+}
+
+/*ajuste das imagens na pagina para smartphone*/
+#img-smartphone
 {
 
 }
@@ -66,7 +92,12 @@
 }
 #meio-1
 {
-
+    margin-top: 30px;/*margem para fazer com que a primeira imagem não fique colada na informação que esta acima*/
+}
+#botao-img-smartphone
+{
+    background-color: transparent;
+    border: 0;
 }
 #final-pg1
 {
@@ -75,6 +106,33 @@
 
 /*---CSS pagina para descktop---*/
 
+#inicio-2 {
+    display: flex; /* Configura o contêiner principal como flexbox */
+  align-items: flex-start; /* Alinha os itens no topo do contêiner */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 20px; /* Espaçamento entre o box e a imagem, se necessário */
+  padding: 20px; /* Adiciona algum espaçamento interno ao contêiner principal */
+}
+
+
+/*ajustes do titulo*/
+#titulo-desktop
+{
+    font-family: Roboto;/*Escolhe a fonte vinda do google*/    
+    padding: 1px 5px;/*Deixa espaço de 1px na parte superior e inferior e de 50px nas laterais, para ter espaço em branco nas laterais da box*/
+    color: black;/*cor do texto*/
+}
+
+/*ajuste da caixa do titulo*/
+#box-titulo-desktop
+{    
+    margin-top: 150px;/*Gera uma margem na parte superior box*/
+    margin-bottom: 125px;/*Gera uma margem na parte superior da box*/    
+    box-shadow: 10px 10px 10px black;
+    border: 2px solid black; /* Define uma borda preta de 2px */
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    text-align: center;
+}
 /*Animação das imagens na pagina principal(desktop)*/
 #conjunto-img-1
 {
