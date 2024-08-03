@@ -213,12 +213,14 @@
     width: 100%; /* Ocupa toda a largura disponível */
     padding: 10px; /* Adiciona um pouco de padding ao redor */
     padding-right: 10px;
+    margin-left: -4px;
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */      
 }
+
 #criador-pg1
 {
     background-color: #fff;
-    margin-top: 20px;/* Gera uma margem na parte superior box */     
+    margin-top: 0px;/* Gera uma margem na parte superior box */     
     box-shadow: 10px 10px 20px var(--cinza4);
     border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
@@ -227,10 +229,11 @@
     transition: transform 0.5s ;
     transition: box-shadow 0.5s;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 20px;
     padding: 10px;
-    width: 750px;
+    width: 370px;
+    
 }
 /*---CSS pagina para descktop---*/
 
