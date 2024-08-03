@@ -235,6 +235,11 @@
     width: 370px;
     
 }
+#autoria-pg1
+{
+    display: flex;
+    justify-content: center;
+}
 /*---CSS pagina para descktop---*/
 
 #fundo-pg2
@@ -557,8 +562,11 @@
     width: 750px;
     margin-bottom: 20px;
 }
-
-
+#autoria
+{
+    display: flex;
+    justify-content: center;
+}
 
 
   
