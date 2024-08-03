@@ -332,7 +332,7 @@
     display: flex; /* Flexbox ativado */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    margin-top: 5px; /* Margem superior */   
+    margin-top: 20px; /* Margem superior */   
 }
 .social-icon-desktop
 {
@@ -379,6 +379,9 @@
     transform: scale(1);
     transition: transform 0.5s ;
     transition: box-shadow 0.5s;
+    margin: 20px 50px 10px 50px;
+    font-size: 20px;
+    padding: 10px;
 }
 #box-titulo-desktop:hover /*animação da caixa do titulo*/
 {
@@ -475,5 +478,36 @@
     color: white;
     transform: rotateX(180deg); /* Rotação vertical */
 }
-  
+#final-pg2
+{    
+    background-color: #fff;
+    margin-top: 20px;/* Gera uma margem na parte superior box */     
+    box-shadow: 10px 10px 20px var(--cinza4);
+    border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.5s ;
+    transition: box-shadow 0.5s;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    width: 800px;
+}
+#qr-code {
+    display: flex; /* Configura o contêiner como flexbox */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaça os itens igualmente entre a esquerda e a direita */
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Adiciona um pouco de padding ao redor */
+    padding-right: 10px;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */  
+}
+
+#qrcode {
+    flex: 0 0 auto; /* Impede que a imagem cresça ou encolha, mantendo seu tamanho original */
+}
+
+
   

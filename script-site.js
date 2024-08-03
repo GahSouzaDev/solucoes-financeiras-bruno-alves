@@ -30,3 +30,16 @@ function instagran() {
 function whatsapp() {
     window.open('//wa.me/message/OIQDSPEFPUIFN1', '_blank');
 }
+document.addEventListener('scroll', function() {
+    const botaoFixo = document.getElementById('botao-fixo');
+    const alturaTotal = document.documentElement.scrollHeight;
+    const metadeDaPagina = alturaTotal / 2;
+    const posicaoAtual = window.scrollY + window.innerHeight;
+    const margemParaFinal = 100; // Margem a partir do final da página para ocultar o botão
+
+    if (posicaoAtual >= metadeDaPagina && posicaoAtual < (alturaTotal - margemParaFinal)) {
+        botaoFixo.style.display = 'block';
+    } else {
+        botaoFixo.style.display = 'none';
+    }
+});
