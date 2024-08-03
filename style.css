@@ -8,7 +8,7 @@
     --cinza1:rgb(190, 188, 188);
     --cinza2:rgb(141, 141, 141); 
     --cinza3:rgb(105, 105, 105); 
-    --cinza4:rgb(66, 66, 66); 
+    --cinza4:rgb(66, 66, 66);     
 }
 
 /*---CSS pagina para smartphone---*/
@@ -103,6 +103,7 @@
     align-items: center; /* Centraliza horizontalmente */
     justify-content: center; /* Centraliza verticalmente */
     width: 100%; /* Ocupa toda a largura disponível */    
+    margin-left: -10px;
 }
 
 #img-smartphone 
@@ -141,6 +142,7 @@
     display: grid;
     place-items: center;   
     margin: 10px;  
+    margin-left: -10px;
 }
 
 /*ajuste da foto de perfil*/
@@ -174,10 +176,10 @@
     background-color: transparent;
     border: 0;
 }
-/*#final-pg1
+#final-pg1
 {
-
-}*/
+    margin-left: -10px;
+}
 
 /*---CSS pagina para descktop---*/
 
