@@ -41,17 +41,37 @@
 /*ajuste da caixa do titulo*/
 #box-titulo-smartphone 
 {
+    background-color: #fff;
     margin-top: 20px;/* deixa uma margem no top para não ficar grudado na foto de perfil*/
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 20px var(--cinza4);
     border: 2px solid black; /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
     text-align: center;
+    transform: scale(1);
+    transition: transform 0.5s ;
+    transition: box-shadow 0.5s;
+}
+#box-titulo-smartphone:hover /*animação da caixa do titulo*/
+{
+    transform: scale(1.1);
+    transition: transform 0.5s ;
+    box-shadow: 10px 10px 7px var(--cinza4);
+    transition: box-shadow 0.5s;
 }
 
 /*ajuste das imagens na pagina para smartphone*/
 #img-smartphone
 {
-
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+    gap: 50px; 
+    flex-wrap: wrap; 
 }
 
 /*ajuste da parte inicial*/
@@ -66,6 +86,7 @@
 /*ajuste da foto de perfil*/
 #img-perfil-1
 {
+    background-color: #fff;
     border-radius: 50%;
     width: 250px;
     height: 250px;
@@ -106,6 +127,10 @@
 
 /*---CSS pagina para descktop---*/
 
+#fundo-pg2
+{
+    background-color: var(--cinza1);/* Fundo da pagina desktop*/
+}
 #inicio-2 
 {
     display: flex; /* Configura o contêiner principal como flexbox */
@@ -113,6 +138,28 @@
     justify-content: center; /* Centraliza os itens horizontalmente */
     gap: 30px; /* Espaçamento entre o box e a imagem, se necessário */
     padding: 20px; /* Adiciona algum espaçamento interno ao contêiner principal */
+}
+/*ajuste da foto de perfil desktop*/
+#img-perfil-2
+{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    box-shadow: 10px 10px 30px var(--cinza4);
+    transform: scale(1);
+    transition: transform 0.3s ;
+    transition: box-shadow 0.3s;
+    position: relative; /* Adicionado para garantir que o box-shadow não afete o layout */
+    z-index: 1; /* Adicionado para garantir que a imagem esteja acima de outros elementos */    
+}
+/*animação da foto de perfil desktop*/
+#img-perfil-2:hover
+{
+    transform: scale(1.1);
+    transition: transform 0.3s ;
+    box-shadow: 10px 10px 10px var(--cinza4);
+    transition: box-shadow 0.3s;
 }
 
 /* Ajuste das informações na lateral da foto de perfil da pagina desktop*/
@@ -150,19 +197,42 @@
 /* ajuste da caixa do titulo */
 #box-titulo-desktop
 {    
+    background-color: #fff;
     margin-top: 70px;/* Gera uma margem na parte superior box */     
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 20px var(--cinza4);
     border: 2px solid black; /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
     text-align: center;
+    transform: scale(1);
+    transition: transform 0.5s ;
+    transition: box-shadow 0.5s;
 }
+#box-titulo-desktop:hover /*animação da caixa do titulo*/
+{
+    transform: scale(1.1);
+    transition: transform 0.5s ;
+    box-shadow: 10px 10px 10px var(--cinza4);
+    transition: box-shadow 0.5s;
+}
+/* ajuste da caixa da apresentação */
 #box-apresentacao-desktop
 {    
+    background-color: #fff;
     margin-top: 10px;/* Gera uma margem na parte superior box */       
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 20px var(--cinza4);
     border: 2px solid black; /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
     text-align: center;
+    transform: scale(1);
+    transition: transform 0.5s ;
+    transition: box-shadow 0.5s;
+}
+#box-apresentacao-desktop:hover /* animação da caixa da apresentação */
+{
+    transform: scale(1.1);
+    transition: transform 0.5s ;
+    box-shadow: 10px 10px 10px var(--cinza4);
+    transition: box-shadow 0.5s;
 }
 /*Animação das imagens na pagina principal(desktop)*/
 #conjunto-img-1
@@ -246,7 +316,7 @@
   
 .flip-card-back 
 {
-    background-color: #2980b9;
+    background-color: var(--cinza2);
     color: white;
     transform: rotateX(180deg); /* Rotação vertical */
 }
