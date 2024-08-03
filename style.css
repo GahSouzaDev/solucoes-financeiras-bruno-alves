@@ -132,7 +132,7 @@
     align-items: center; /* Centraliza horizontalmente */
     justify-content: center; /* Centraliza verticalmente */
     width: 100%; /* Ocupa toda a largura disponível */    
-    margin-left: -10px;
+    margin-left: -5px;
 }
 
 #img-smartphone 
@@ -171,7 +171,7 @@
     display: grid;
     place-items: center;   
     margin: 10px;  
-    margin-left: -10px;
+    margin-left: -5px;
 }
 
 /*ajuste da foto de perfil*/
@@ -213,7 +213,7 @@
     align-items: center; /* Centraliza horizontalmente */
     justify-content: center; /* Centraliza verticalmente */
     width: 100%; /* Ocupa toda a largura disponível */    
-    margin-left: -10px;
+    margin-left: -5px;
 }
 
 /*---CSS pagina para descktop---*/
@@ -289,7 +289,7 @@
 #box-titulo-desktop
 {    
     background-color: #fff;
-    margin-top: 70px;/* Gera uma margem na parte superior box */     
+    margin-top: 20px;/* Gera uma margem na parte superior box */     
     box-shadow: 10px 10px 20px var(--cinza4);
     border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
@@ -325,6 +325,52 @@
     box-shadow: 10px 10px 10px var(--cinza4);
     transition: box-shadow 0.5s;
 }
+#social-desktop 
+{
+    width: 330px;   
+    border-radius: 10px; /* Cantos arredondados */
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 5px; /* Margem superior */   
+}
+.social-icon-desktop
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Largura fixa dos ícones */
+    height: 60px; /* Altura fixa dos ícones */
+    color: black; /* Cor dos ícones */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+    margin: 0 25px; /* Margem horizontal */
+}
+
+.social-icon-desktop i 
+{
+    font-size: 40px; /* Ajusta o tamanho dos ícones dentro do link */
+}
+
+.social-icon-desktop:hover
+{
+    transform: scale(1.3); /* Aumenta o ícone na escala 1.1 */
+}
+#botao-fixo 
+{
+    position: fixed; /* Fixa o botão em relação à tela */
+    bottom: 100px; /* Margem de 300px do final da página */
+    right: 20px; /* Margem de 20px do lado direito da tela */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+    background-color: none;   
+    padding: 10px 10px; /* Padding interno do botão (opcional) */
+    border: none; /* Remove a borda do botão (opcional) */
+    border-radius: 5px; /* Arredonda os cantos do botão (opcional) */
+    cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão (opcional) */   
+}
+
+
+
 /*Animação das imagens na pagina principal(desktop)*/
 #conjunto-img-1
 {
