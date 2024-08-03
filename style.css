@@ -19,15 +19,14 @@
     background-color: var(--cinza1);/* Fundo da pagina smartphone*/
 }
 
-#inicio-pg1
+/*#inicio-pg1
 {
     
-}
+}*/
 
 #meio-pg1
 {
-    margin-top: 20px;/* Margem para fazer com que a imagens não fique colada na margem do topo do nagenador*/
-    justify-items: center;
+    margin-top: 20px;/* Margem para fazer com que a imagens não fique colada na margem do topo do nagenador*/   
 }
 
 /*----------TITULO-SMARTPHONE----------*/
@@ -45,35 +44,32 @@
 {
     width: 380px;
     background-color: #fff;
-    margin-top: 20px;/* deixa uma margem no top para não ficar grudado na foto de perfil*/
+    margin-top: 20px; /* Margem no topo */
     box-shadow: 10px 10px 20px var(--cinza4);
-    border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
-    border-radius: 10px; /* Arredonda os cantos da borda */
+    border: 2px solid var(--cinza4); /* Borda preta de 2px */
+    border-radius: 10px; /* Cantos arredondados */
     text-align: center;
     transform: scale(0.9);
-    transition: transform 0.5s ;
-    transition: box-shadow 0.5s;
+    transition: transform 0.5s, box-shadow 0.5s; /* Transições suavizadas */
 }
 #box-titulo-smartphone:hover /*animação da caixa do titulo*/
 {
     transform: scale(1.01);
-    transition: transform 0.5s ;
     box-shadow: 10px 10px 7px var(--cinza4);
-    transition: box-shadow 0.5s;
 }
 
 #social 
 {
     width: 330px;
     background-color: #fff;
-    margin-top: 20px;/* deixa uma margem no top para não ficar grudado na titulo*/
+    margin-top: 20px; /* Margem no topo */
     box-shadow: 10px 10px 20px var(--cinza4);
-    border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
-    border-radius: 10px; /* Arredonda os cantos da borda */
-    display: flex; /* Ativa o Flexbox no contêiner */
-    justify-content: center; /* Centraliza os ícones horizontalmente */
-    align-items: center; /* Centraliza os ícones verticalmente */
-    margin-top: 30px; /* Margem superior para afastar do topo */
+    border: 2px solid var(--cinza4); /* Borda preta de 2px */
+    border-radius: 10px; /* Cantos arredondados */
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 30px; /* Margem superior */
 }
 
 .social-icon 
@@ -85,8 +81,8 @@
     height: 60px; /* Altura fixa dos ícones */
     color: black; /* Cor dos ícones */
     text-decoration: none; /* Remove o sublinhado dos links */
-    transition: transform 0.3s ease; /* Suaviza a transição do efeito de hover */
-    margin: 0 25px; /* Adiciona margem horizontal (esquerda e direita) */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+    margin: 0 25px; /* Margem horizontal */
 }
 
 .social-icon i 
@@ -95,27 +91,26 @@
 }
 
 .social-icon:hover {
-    transform: scale(1.5); /* Aumenta o ícone na escala 1.1 */
+    transform: scale(1.3); /* Aumenta o ícone na escala 1.1 */
 }
 
 /*ajuste das imagens na pagina para smartphone*/
 #meio-1 
 {
-    margin-top: 30px; /* Margem para afastar o conteúdo do topo */
+    margin-top: 30px; /* Margem no topo */
     display: flex;
-    flex-direction: column; /* Organiza os itens em uma coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
-    justify-items: center;
+    flex-direction: column; /* Itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
     width: 100%; /* Ocupa toda a largura disponível */    
 }
 
 #img-smartphone 
 {
-    display: flex; /* Ativa o flexbox para o contêiner de imagens */
-    flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte se necessário */
-    justify-content: center; /* Centraliza as imagens horizontalmente */
-    gap: 20px; /* Espaço entre as imagens */
+    display: flex; /* Flexbox ativado */
+    flex-wrap: wrap; /* Permite quebra de linha para imagens */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
 }
 
 #img-smartphone button 
@@ -157,18 +152,15 @@
     height: 250px;
     box-shadow: 10px 10px 30px var(--cinza4);
     transform: scale(1);
-    transition: transform 0.3s ;
-    transition: box-shadow 0.3s;
-    position: relative; /* Adicionado para garantir que o box-shadow não afete o layout */
-    z-index: 1; /* Adicionado para garantir que a imagem esteja acima de outros elementos */    
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suavizadas */
+    position: relative; /* Garantia para o box-shadow */
+    z-index: 1; /* Garantia para a imagem */
 }
 /*animação da foto de perfil*/
 #img-perfil-1:hover
 {
     transform: scale(1.1);
-    transition: transform 0.3s ;
     box-shadow: 10px 10px 10px var(--cinza4);
-    transition: box-shadow 0.3s;
 }
 /*configurações do botão da foto de perfil*/
 #botao-perfil
@@ -182,10 +174,10 @@
     background-color: transparent;
     border: 0;
 }
-#final-pg1
+/*#final-pg1
 {
 
-}
+}*/
 
 /*---CSS pagina para descktop---*/
 
@@ -195,12 +187,11 @@
 }
 #inicio-2 
 {
-    display: flex; /* Configura o contêiner principal como flexbox */
-    align-items: flex-start; /* Alinha os itens no topo do contêiner */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    justify-items: center;
-    gap: 30px; /* Espaçamento entre o box e a imagem, se necessário */
-    padding: 20px; /* Adiciona algum espaçamento interno ao contêiner principal */
+    display: flex; /* Flexbox ativado */
+    align-items: flex-start; /* Alinha no topo */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 30px; /* Espaçamento entre itens */
+    padding: 20px; /* Espaçamento interno */
 }
 /*ajuste da foto de perfil desktop*/
 #img-perfil-2
