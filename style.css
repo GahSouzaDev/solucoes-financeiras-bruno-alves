@@ -60,6 +60,42 @@
     transition: box-shadow 0.5s;
 }
 
+#social 
+{
+    width: 365px;
+    background-color: #fff;
+    margin-top: 20px;/* deixa uma margem no top para não ficar grudado na foto de perfil*/
+    box-shadow: 10px 10px 20px var(--cinza4);
+    border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    display: flex; /* Ativa o Flexbox no contêiner */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Centraliza os ícones verticalmente */
+    margin-top: 30px; /* Margem superior para afastar do topo */
+}
+
+.social-icon 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Largura fixa dos ícones */
+    height: 60px; /* Altura fixa dos ícones */
+    color: black; /* Cor dos ícones */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: transform 0.3s ease; /* Suaviza a transição do efeito de hover */
+    margin: 0 25px; /* Adiciona margem horizontal (esquerda e direita) */
+}
+
+.social-icon i 
+{
+    font-size: 30px; /* Ajusta o tamanho dos ícones dentro do link */
+}
+
+.social-icon:hover {
+    transform: scale(1.5); /* Aumenta o ícone na escala 1.1 */
+}
+
 /*ajuste das imagens na pagina para smartphone*/
 #meio-1 
 {
