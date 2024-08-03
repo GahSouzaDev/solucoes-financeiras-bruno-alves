@@ -34,7 +34,7 @@
 #titulo-smartphone
 {
     font-family: Roboto;/* Escolhe a fonte vinda do google*/    
-    padding: 1px 50px;/* Deixa espaço de 1px na parte superior e inferior e de 50px nas laterais, para ter espaço em branco nas laterais da box*/
+    padding: 1px 30px;/* Deixa espaço de 1px na parte superior e inferior e de 50px nas laterais, para ter espaço em branco nas laterais da box*/
     color: black;/*cor do texto*/
     font-size: 20px;
 }
@@ -42,13 +42,14 @@
 /*ajuste da caixa do titulo*/
 #box-titulo-smartphone 
 {
+    width: 380px;
     background-color: #fff;
     margin-top: 20px;/* deixa uma margem no top para não ficar grudado na foto de perfil*/
     box-shadow: 10px 10px 20px var(--cinza4);
     border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
     text-align: center;
-    transform: scale(0.88);
+    transform: scale(0.9);
     transition: transform 0.5s ;
     transition: box-shadow 0.5s;
 }
@@ -62,7 +63,7 @@
 
 #social 
 {
-    width: 365px;
+    width: 330px;
     background-color: #fff;
     margin-top: 20px;/* deixa uma margem no top para não ficar grudado na foto de perfil*/
     box-shadow: 10px 10px 20px var(--cinza4);
