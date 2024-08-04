@@ -384,19 +384,17 @@
     align-items: center; /* Centraliza o ícone verticalmente */
 }
 
-
-
 .social-icon-desktop:hover
 {
     transform: scale(1.3); /* Aumenta o ícone na escala 1.1 */
 }
+
 #botao-fixo 
 {
     position: fixed; /* Fixa o botão em relação à tela */
     bottom: 100px; /* Margem de 100px do final da página */
     right: 20px; /* Margem de 20px do lado direito da tela */
-    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
-    background-color: #25D366;       
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */          
     border: none; /* Remove a borda do botão */
     border-radius: 50%; /* Arredonda os cantos para fazer o botão ficar redondo */
     cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão */
