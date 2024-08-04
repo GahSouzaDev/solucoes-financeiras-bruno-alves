@@ -8,7 +8,7 @@
     --cinza1:rgb(190, 188, 188);
     --cinza2:rgb(141, 141, 141); 
     --cinza3:rgb(105, 105, 105); 
-    --cinza4:rgb(66, 66, 66);     
+    --cinza4:rgba(66, 66, 66, 0.502);     
 }
 
 /*---CSS pagina para smartphone---*/
@@ -372,10 +372,19 @@
     margin: 0 25px; /* Margem horizontal */
 }
 
-.social-icon-desktop i 
-{
+.social-icon-desktop i {
     font-size: 40px; /* Ajusta o tamanho dos ícones dentro do link */
+    background-color: #ffffff; /* Define o fundo branco */
+    border-radius: 50%; /* Torna o fundo redondo */
+    padding: 10px; /* Adiciona espaçamento interno para o ícone */
+    width: 60px; /* Define a largura do fundo */
+    height: 45px; /* Define a altura do fundo */
+    display: flex; /* Garante o alinhamento central do ícone */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    align-items: center; /* Centraliza o ícone verticalmente */
 }
+
+
 
 .social-icon-desktop:hover
 {
