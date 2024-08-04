@@ -107,21 +107,21 @@
 {    
     width: 330px;
     background-color: #fff;
-    margin-top: 20px; /* Margem no topo */
+    margin-top: 30px; /* Margem superior ajustada */
     box-shadow: 10px 10px 20px var(--cinza4);
     border: 2px solid var(--cinza4); /* Borda preta de 2px */
     border-radius: 10px; /* Cantos arredondados */
     display: flex; /* Flexbox ativado */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    margin-top: 30px; /* Margem superior */
+    transform: scale(1); /* Inicializa o transform */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transições combinadas e suavizadas */
 }
-#box-apresentacao-smartphone:hover /* animação da caixa da apresentação */
+
+#box-apresentacao-smartphone:hover /* Animação da caixa da apresentação */ 
 {
-    transform: scale(1.1);
-    transition: transform 0.5s ;
-    box-shadow: 10px 10px 10px var(--cinza4);
-    transition: box-shadow 0.5s;
+    transform: scale(1.1); /* Aumenta o tamanho no hover */
+    box-shadow: 10px 10px 30px var(--cinza4); /* Ajusta a sombra no hover */
 }
 
 /*ajuste das imagens na pagina para smartphone*/
@@ -257,26 +257,22 @@
     padding: 20px; /* Espaçamento interno */
 }
 /*ajuste da foto de perfil desktop*/
-#img-perfil-2
-{
+#img-perfil-2 {
     background-color: #fff;
     border-radius: 50%;
     width: 300px;
     height: 300px;
     box-shadow: 10px 10px 30px var(--cinza4);
     transform: scale(1);
-    transition: transform 0.3s ;
-    transition: box-shadow 0.3s;
-    position: relative; /* Adicionado para garantir que o box-shadow não afete o layout */
-    z-index: 1; /* Adicionado para garantir que a imagem esteja acima de outros elementos */    
+    position: relative; /* Garante que o box-shadow não afete o layout */
+    z-index: 1; /* Garante que a imagem esteja acima de outros elementos */
+    transition: transform 0.6s ease, box-shadow 0.6s ease; /* Transição mais suave */
 }
-/*animação da foto de perfil desktop*/
-#img-perfil-2:hover
-{
+
+/* Animação da foto de perfil desktop */
+#img-perfil-2:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ;
     box-shadow: 10px 10px 10px var(--cinza4);
-    transition: box-shadow 0.3s;
 }
 
 /* Ajuste das informações na lateral da foto de perfil da pagina desktop*/
@@ -295,6 +291,7 @@
     font-family: Roboto;/* Escolhe a fonte vinda do google */    
     padding: 1px 10px;/* Deixa espaço de 1px na parte superior e inferior e de 50px nas laterais, para ter espaço em branco nas laterais da bo x*/
     color: black;/* Cor do texto */
+    
 }
 /* Ajusta testo de apresentação*/
 #texto-apresentacao2
@@ -315,42 +312,41 @@
 #box-titulo-desktop
 {    
     background-color: #fff;
-    margin-top: 20px;/* Gera uma margem na parte superior box */     
+    margin-top: 20px; /* Gera uma margem na parte superior do box */     
     box-shadow: 10px 10px 20px var(--cinza4);
     border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
     text-align: center;
     transform: scale(1);
-    transition: transform 0.5s ;
-    transition: box-shadow 0.5s;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transições combinadas e suavizadas */
 }
-#box-titulo-desktop:hover /*animação da caixa do titulo*/
+
+#box-titulo-desktop:hover /* Animação da caixa do título */ 
 {
     transform: scale(1.1);
-    transition: transform 0.5s ;
-    box-shadow: 10px 10px 10px var(--cinza4);
-    transition: box-shadow 0.5s;
+    box-shadow: 10px 10px 30px var(--cinza4); /* Ajusta a sombra no hover */
 }
+
+
+
 /* ajuste da caixa da apresentação */
-#box-apresentacao-desktop
+#box-apresentacao-desktop 
 {    
     background-color: #fff;
-    margin-top: 10px;/* Gera uma margem na parte superior box */       
+    margin-top: 10px; /* Gera uma margem na parte superior do box */       
     box-shadow: 10px 10px 20px var(--cinza4);
     border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
     text-align: center;
     transform: scale(1);
-    transition: transform 0.5s ;
-    transition: box-shadow 0.5s;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transições combinadas e suavizadas */
 }
-#box-apresentacao-desktop:hover /* animação da caixa da apresentação */
-{
+
+#box-apresentacao-desktop:hover /* Animação da caixa da apresentação */ {
     transform: scale(1.1);
-    transition: transform 0.5s ;
-    box-shadow: 10px 10px 10px var(--cinza4);
-    transition: box-shadow 0.5s;
+    box-shadow: 10px 10px 30px var(--cinza4); /* Ajusta a sombra no hover */
 }
+
 #social-desktop 
 {
     width: 330px;   
