@@ -33,9 +33,9 @@ function whatsapp() {
 document.addEventListener('scroll', function() {
     const botaoFixo = document.getElementById('botao-fixo');
     const alturaTotal = document.documentElement.scrollHeight;
-    const metadeDaPagina = alturaTotal / 2;
+    const metadeDaPagina = alturaTotal / 3;
     const posicaoAtual = window.scrollY + window.innerHeight;
-    const margemParaFinal = 100; // Margem a partir do final da página para ocultar o botão
+    const margemParaFinal = 300; // Margem a partir do final da página para ocultar o botão
 
     if (posicaoAtual >= metadeDaPagina && posicaoAtual < (alturaTotal - margemParaFinal)) {
         botaoFixo.style.display = 'block';
@@ -43,3 +43,4 @@ document.addEventListener('scroll', function() {
         botaoFixo.style.display = 'none';
     }
 });
+
