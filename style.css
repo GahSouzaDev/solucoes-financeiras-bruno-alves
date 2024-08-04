@@ -235,6 +235,11 @@
     width: 370px;
     
 }
+#autoria-pg1
+{
+    display: flex;
+    justify-content: center;
+}
 /*---CSS pagina para descktop---*/
 
 #fundo-pg2
@@ -502,9 +507,8 @@
   
 .flip-card-back 
 {
-    background-color: var(--cinza2);
-    color: white;
-    transform: rotateX(180deg); /* Rotação vertical */
+    background-color: var(--cinza4);    
+    transform: rotateX(180deg); /* Rotação vertical */    
 }
 #final-pg2
 {    
@@ -557,8 +561,18 @@
     width: 750px;
     margin-bottom: 20px;
 }
-
-
-
+#autoria
+{
+    display: flex;
+    justify-content: center;
+}
+#texto-interior
+{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 350px;
+    justify-items: center;  
+    color: white;
+}
 
   
