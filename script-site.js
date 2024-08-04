@@ -1,22 +1,44 @@
 let previousWidth = window.innerWidth;
 let resizeTimeout;
 
+// Função para redirecionar com base na largura da tela
+function redirectBasedOnWidth() {
+    const currentWidth = window.innerWidth;
+
+    // Verifica se a tela está no tamanho adequado para redirecionar
+    if (currentWidth <= 720) {
+        window.location.href = 'index.html';
+    } else {
+        window.location.href = 'pagina-principal.html';
+    }
+}
+
+// Verificação e redirecionamento inicial ao carregar a página
+window.onload = function() {
+    // Verifica se o redirecionamento inicial já foi feito usando localStorage
+    if (!localStorage.getItem('redirected')) {
+        redirectBasedOnWidth();
+        localStorage.setItem('redirected', 'true');
+    }
+};
+
+// Listener para redimensionamento da janela com debounce
 window.onresize = function() {
     clearTimeout(resizeTimeout);
-    
+
     resizeTimeout = setTimeout(function() {
         const currentWidth = window.innerWidth;
-        
+
         if (Math.abs(currentWidth - previousWidth) > 100) {
             previousWidth = currentWidth;
-            
-            if (currentWidth <= 720) {
-                window.location.href = 'index.html';
-            } else {
-                window.location.href = 'pagina-principal.html';
-            }
+            redirectBasedOnWidth();
         }
     }, 200); // O atraso pode ser ajustado conforme necessário (200 ms é um exemplo)
+};
+
+// Reseta a flag de redirecionamento quando a página é recarregada
+window.onbeforeunload = function() {
+    localStorage.removeItem('redirected');
 };
 
 
