@@ -567,6 +567,11 @@
     display: flex;
     justify-content: center;
 }
-
+#texto-interior
+{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
 
   
