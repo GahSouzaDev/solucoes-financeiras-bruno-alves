@@ -8,7 +8,8 @@
     --cinza1:rgb(190, 188, 188);
     --cinza2:rgb(141, 141, 141); 
     --cinza3:rgb(105, 105, 105); 
-    --cinza4:rgba(66, 66, 66, 0.502);     
+    --cinza4:rgba(66, 66, 66, 0.502);  
+    --cinza5:rgb(66, 66, 66);   
 }
 
 /*---CSS pagina para smartphone---*/
@@ -514,7 +515,7 @@
   
 .flip-card-back 
 {
-    background-color: var(--cinza4);    
+    background-color: var(--cinza5);    
     transform: rotateX(180deg); /* Rotação vertical */    
 }
 #final-pg2
