@@ -400,6 +400,7 @@
     align-items: center; /* Alinha o conteúdo verticalmente */
     justify-content: center; /* Alinha o conteúdo horizontalmente */
     display: none;
+    box-shadow: 10px 10px 20px var(--cinza3);
 }
 #whatsapp
 {
