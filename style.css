@@ -571,14 +571,12 @@
     justify-content: center;
     text-align: center;    
 }
-#texto-interior
-{
+#texto-interior {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: clamp(12px, 2vw, 20px); /* Tamanho da fonte varia entre 12px e 20px */
     width: 350px;
-    justify-items: center;  
+    justify-items: center;
     text-align: center;
     color: white;
 }
-
   
