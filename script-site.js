@@ -1,23 +1,46 @@
 let previousWidth = window.innerWidth;
 let resizeTimeout;
+let redirected = false; // Flag para evitar redirecionamento contínuo
 
+// Função para redirecionar com base na largura da tela
+function redirectBasedOnWidth() {
+    const currentWidth = window.innerWidth;
+
+    if (currentWidth <= 720) {
+        if (window.location.pathname !== '/index.html') {
+            window.location.href = 'index.html';
+        }
+    } else {
+        if (window.location.pathname !== '/pagina-principal.html') {
+            window.location.href = 'pagina-principal.html';
+        }
+    }
+}
+
+// Verificação e redirecionamento inicial ao carregar a página
+window.onload = function() {
+    redirectBasedOnWidth();
+    redirected = true; // Define que o redirecionamento inicial foi feito
+};
+
+// Listener para redimensionamento da janela com debounce
 window.onresize = function() {
     clearTimeout(resizeTimeout);
-    
+
     resizeTimeout = setTimeout(function() {
         const currentWidth = window.innerWidth;
-        
+
+        // Verifica se a largura da tela mudou significativamente
         if (Math.abs(currentWidth - previousWidth) > 100) {
             previousWidth = currentWidth;
-            
-            if (currentWidth <= 720) {
-                window.location.href = 'index.html';
-            } else {
-                window.location.href = 'pagina-principal.html';
+
+            if (redirected) {
+                redirectBasedOnWidth(); // Redireciona com base na nova largura
             }
         }
     }, 200); // O atraso pode ser ajustado conforme necessário (200 ms é um exemplo)
 };
+
 
 function facebook() {
     window.open('https://www.facebook.com/profile.php?id=61554782643114&mibextid=kFxxJD', '_blank');
