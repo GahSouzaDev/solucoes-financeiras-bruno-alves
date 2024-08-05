@@ -10,6 +10,7 @@
     --cinza3:rgb(105, 105, 105); 
     --cinza4:rgba(66, 66, 66, 0.502);  
     --cinza5:rgb(66, 66, 66);   
+    --cinza6:rgb(249, 249, 249);
 }
 
 /*---CSS pagina para smartphone---*/
@@ -238,11 +239,12 @@
     padding: 20px; /* Espaçamento interno */
 }
 /*ajuste da foto de perfil desktop*/
-#img-perfil-2 {
+#img-perfil-2 
+{   
     background-color: #fff;
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     box-shadow: 10px 10px 30px var(--cinza4);
     transform: scale(1);
     position: relative; /* Garante que o box-shadow não afete o layout */
@@ -274,26 +276,12 @@
     color: black;/* Cor do texto */
     
 }
-/* Ajusta testo de apresentação*/
-#texto-apresentacao2
-{
-    font-family: Roboto;/* Escolhe a fonte vinda do google */        
-    font-size: 15px;
-    padding: 1px 20px;/* Deixa espaço de 1px na parte superior e inferior e de 50px nas laterais, para ter espaço em branco nas laterais da bo x*/
-    color: black;/* Cor do texto */
-}
-#texto-apresentacao .icon 
-{
-    font-size: 20px; /* Tamanho dos ícones */
-    margin-right: 10px; /* Espaço entre o ícone e o texto */
-    vertical-align: middle; /* Alinha verticalmente os ícones com o texto */
-}
 
 /* ajuste da caixa do titulo */
 #box-titulo-desktop
 {    
     background-color: #fff;
-    margin-top: 20px; /* Gera uma margem na parte superior do box */     
+    margin-top: 80px; /* Gera uma margem na parte superior do box */     
     box-shadow: 10px 10px 20px var(--cinza4);
     border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
     border-radius: 10px; /* Arredonda os cantos da borda */
@@ -303,27 +291,13 @@
 }
 
 #box-titulo-desktop:hover /* Animação da caixa do título */ 
-{
+{    
     transform: scale(1.1);
     box-shadow: 10px 10px 30px var(--cinza4); /* Ajusta a sombra no hover */
 }
 
-
-
-/* ajuste da caixa da apresentação */
-#box-apresentacao-desktop 
-{    
-    background-color: #fff;
-    margin-top: 10px; /* Gera uma margem na parte superior do box */       
-    box-shadow: 10px 10px 20px var(--cinza4);
-    border: 2px solid var(--cinza4); /* Define uma borda preta de 2px */
-    border-radius: 10px; /* Arredonda os cantos da borda */
-    text-align: center;
-    transform: scale(1);
-    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transições combinadas e suavizadas */
-}
-
-#box-apresentacao-desktop:hover /* Animação da caixa da apresentação */ {
+#box-apresentacao-desktop:hover /* Animação da caixa da apresentação */ 
+{
     transform: scale(1.1);
     box-shadow: 10px 10px 30px var(--cinza4); /* Ajusta a sombra no hover */
 }
@@ -399,8 +373,9 @@
     transition: transform 0.5s ;
     transition: box-shadow 0.5s;
     margin: 20px 50px 10px 50px;
+    font-family: Roboto;
     font-size: 20px;
-    padding: 10px;
+    padding: 25px;
 }
 #box-titulo-desktop:hover /*animação da caixa do titulo*/
 {
@@ -493,8 +468,9 @@
   
 .flip-card-back 
 {
-    background-color: var(--cinza5);    
-    transform: rotateX(180deg); /* Rotação vertical */    
+    background-color: var(--cinza6);    
+    transform: rotateX(180deg); /* Rotação vertical 
+    */       
 }
 #final-pg2
 {    
@@ -558,6 +534,6 @@
     width: 350px;
     justify-items: center;
     text-align: center;
-    color: white;
+    color: black
 }
   
