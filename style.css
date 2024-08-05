@@ -103,26 +103,7 @@
     color: black;/* Cor do texto */
 }
 
-#box-apresentacao-smartphone
-{    
-    width: 330px;
-    background-color: #fff;
-    margin-top: 30px; /* Margem superior ajustada */
-    box-shadow: 10px 10px 20px var(--cinza4);
-    border: 2px solid var(--cinza4); /* Borda preta de 2px */
-    border-radius: 10px; /* Cantos arredondados */
-    display: flex; /* Flexbox ativado */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    transform: scale(1); /* Inicializa o transform */
-    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transições combinadas e suavizadas */
-}
 
-#box-apresentacao-smartphone:hover /* Animação da caixa da apresentação */ 
-{
-    transform: scale(1.1); /* Aumenta o tamanho no hover */
-    box-shadow: 10px 10px 30px var(--cinza4); /* Ajusta a sombra no hover */
-}
 
 /*ajuste das imagens na pagina para smartphone*/
 #meio-1 
