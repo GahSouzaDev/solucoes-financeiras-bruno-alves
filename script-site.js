@@ -6,7 +6,7 @@ function redirectBasedOnWidth() {
     const currentWidth = window.innerWidth;
 
     // Verifica se a tela está no tamanho adequado para redirecionar
-    if (currentWidth <= 720) {
+    if (currentWidth <= 800) {
         window.location.href = 'index.html';
     } else {
         window.location.href = 'pagina-principal.html';
